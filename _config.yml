@@ -7,7 +7,7 @@ title: Hexo
 subtitle:
 description:
 author: John Doe
-language:
+language: zh-Hans
 timezone:
 
 # URL
@@ -63,9 +63,13 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: yilia
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type:
+deploy: 
+  type: git
+  repo: 
+    coding: git@git.coding.net:imelos/imelos.git
+    github: git@github.com:melos2016/melos2016.github.io.git
+  branch: master
