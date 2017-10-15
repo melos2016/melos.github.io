@@ -1,4 +1,6 @@
 language: node_js
+node_js:
+  - "6"
 branches:
   only:
   - hexo
@@ -11,12 +13,12 @@ before_install:
 - cp ssh_config ~/.ssh/config
 - git config --global user.name "Melos"
 - git config --global user.email imelosun@gmail.com
-- git clone -b master git@github.com:melos2016/melos2016.github.io.git .deploy_git
 install:
 - npm install hexo-cli -g
 - npm install
 - npm install hexo-generator-feed --save
 - npm install hexo-deployer-git --save
+- npm install hexo-generator-json-content --save
 script:
 - hexo clean
 - hexo g
